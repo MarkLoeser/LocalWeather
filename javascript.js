@@ -9,7 +9,7 @@
    function getWeather(){
 
    var apiKey = '8188d2efca90a6f6a9a9b53f07280a0f';
-   var url = 'https://api.forecast.io/forecast/';
+   var url = 'https://api.darksky.net/forecast/';
    var data;
    var units = "°F"
             
@@ -26,7 +26,7 @@
               
          // switch case to pick weather icon based off the data
             switch (data.currently.icon){
-              case "partly-cloud-day":
+              case "partly-cloudy-day":
                 $("#icon").attr('src', 'http://res.cloudinary.com/dpyptkefp/image/upload/v1473420467/partycloudy_wdnbaf.png');
                 break;
               case "clear-day":
@@ -94,10 +94,3 @@ $(document).ready(function(){
    
    
   });
-
-
-//function to send forecast.io api call and retrieve weather data and also include if/else statement to pull the weather icon that matches the conditions
-
-
-
-//click temperature to switch units between C and F

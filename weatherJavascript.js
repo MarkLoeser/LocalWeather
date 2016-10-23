@@ -1,4 +1,4 @@
-//Forecast.io url with key https://api.forecast.io/forecast/8188d2efca90a6f6a9a9b53f07280a0f/37.8267,-122.423
+//Forecast.io url with key https://api.forecast.io/forecast/--APIKEY--/37.8267,-122.423
 
 
    navigator.geolocation.getCurrentPosition(function(position) {
